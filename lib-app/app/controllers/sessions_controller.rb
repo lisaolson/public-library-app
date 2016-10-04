@@ -9,9 +9,9 @@ class SessionsController < ApplicationController
     @user = User.confirm(user_params)
     if @user
       login(@user)
-      redirect_to @user
+      redirect_to root_path
     else
       redirect_to login_path
     end
-  end  
+  end
 end
