@@ -8,6 +8,8 @@ class LibrariesController < ApplicationController
     @library = Library.new
   end
 
+  before_action :logged_in?, only: [:show]
+
   def create
     @library = Library.create(library_params)
     redirect_to libraries_path
