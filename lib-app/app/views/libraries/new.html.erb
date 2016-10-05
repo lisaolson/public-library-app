@@ -1,0 +1,12 @@
+<%= form_for @library, url: '/libraries' do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: "Name" %>
+  </div>
+  <div>
+    <%= f.number_field :floor_area, placeholder: "Floor Area" %>
+  </div>
+  <div>
+    <%= f.number_field :floor_area, placeholder: "Floor Area" %>
+  </div>
+  <%= f.submit %>
+<% end %>
