@@ -1,0 +1,6 @@
+<%= form_for @library do |f| %>
+  <%= f.text_field :name %>
+  <%= f.number_field :floor_count %>
+  <%= f.number_field :floor_area %>
+  <%= f.submit "Save Library" %>
+<% end %>
